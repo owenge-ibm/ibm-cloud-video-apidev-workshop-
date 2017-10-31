@@ -1,0 +1,379 @@
+/* style.css
+ * This file provides css styles.
+ */
+  /*
+ * 05-15 14:24 AM
+ */
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #222;
+	background: #cccccc;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+input, button {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h4 {
+	color: #9f0000;	
+}
+
+h3 {
+	font-size: 28px;
+	margin-top: 0;
+}
+
+hr {
+	border-top: 1px solid #dedede;
+    border-bottom: 0;
+	outline: 0;
+	margin-bottom: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: #3B6CAA;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+input[type=text] {
+    padding: 0 5px;
+    width: 150px;
+    line-height: 38px;
+    font-size: 16px;
+    border: 1px solid #c0c0c0; 
+}
+
+input[type=file] {
+    margin:20px 0px 0px 0px; 
+    background:#4178BE; 
+    color: #FFFFFF;
+    border:0 none;
+   	box-shadow:none;
+ 	width: 100px;
+ 	height: 40px;    
+    cursor:pointer;
+    font-size: 16px;
+}
+
+.video-button,
+input[type="submit"],
+#oauth {
+	display: inline-block;
+	background: #4178be;
+    color: #fff;
+    border: 2px solid #4178be;
+    line-height: 45px;
+	padding: 0 15px;
+    cursor: pointer;
+    font-size: 16px;
+	transition: all .1s ease-out;
+	vertical-align: top;
+}
+
+.player-control .video-button,
+.video-button.loader,
+#oauth  {
+	background: transparent;
+    border-color: #4178be;
+    color: #4178be;
+	line-height: 36px;
+	padding: 0 25px;
+}
+
+.video-button:hover,
+input[type="submit"]:hover,
+#oauth:hover,
+#upload-browse:hover button {
+	text-decoration: none;
+	color: #fff;
+	background: #325c80;
+    border-color: #325c80;
+}
+
+
+.demo-heading {
+	background-color: #10A78F;
+	font-size: 26px;
+	color: #fff;
+}
+
+.demo-heading p {
+	padding: 25px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.demo-heading-lower {
+	font-size: 16px;
+	border-top: 1px solid #71cec0;
+}
+
+.demo-heading-lower p {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: 400;
+}
+
+.leftHalf {
+	float: left;
+	background-color: #26343f;
+	width: 45%;
+	height: 100%;
+}
+
+.rightHalf {
+	float: right;
+	width: 55%;
+	background-color: #313f4a;
+	height: 100%;
+	overflow:auto;
+}
+
+.description {
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.blue {
+	color: #00aed1;
+}
+
+.stats {
+	font-size: 14px;
+}
+
+.label[class*="st-"] {
+	padding: 0 .4rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1.7rem;
+	border-radius: 2px;
+	display: inline-block;
+}
+
+.label.st-live {
+	background-color: #ff3d23;
+	color: white;
+}
+
+.label.st-offline {
+	background-color: #9cacbc;
+	color: white;
+}
+
+.label.st-playing {
+	background-color: #539eec;
+	color: white;
+}
+
+.label.st-ended {
+	background-color: #e166b7;
+	color: white;
+}
+
+button > span {
+	display: block;
+	height: inherit;
+}
+
+/* Style the tab */
+.tab {
+	overflow: hidden;
+	background-color: #f1f1f1;
+	padding: 0 25px; 
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 16px;
+	font-size: 16px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #ddd;
+}
+/* Change background color of buttons when tab is active */
+.tab button.active {
+	background-color: #fff;
+	font-weight: bold;
+}
+
+span.stats {
+	font-size: 17px;
+}
+
+
+.tabcontent {
+	display: none;
+	padding: 25px;
+	border-top: none;
+	font-size: 15px;
+	background-color: #FFFFFF;
+}
+
+.container {
+	margin-left: 15%; /* Center tabs */
+	width: 1000px;
+}
+
+.upload-container {
+	overflow: hidden;
+	margin: 20px 0;
+	line-height: 40px;
+}
+
+#upload-selects {
+	margin: 0;
+	padding-left: 20px;
+}
+
+#upload-selects lh {
+	display: none;
+}
+
+#upload-selects li {
+	list-style: none;
+	display: inline-block;
+}
+
+#upload-selects li + li:before {
+	content: ", "
+}
+
+#upload-parameters {
+	border-top: 1px solid #dedede;
+	padding: 10px 0;
+    margin-top: 30px;
+}
+
+#upload-parameters input[type="submit"] {
+	margin-top: 20px;
+}
+
+.radio-block {
+	margin: 15px 0;
+}
+
+.player-title {
+	margin: 10px 0 20px;
+	font-size: 18px;
+}
+
+.player-container {
+	overflow: hidden;
+	width: 900px;
+}
+
+.player-embed-left {
+	float: left;
+	width: 360px;
+	height: 220px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+.player-embed-right {
+	float: left;
+}
+
+.channel {
+	font-weight: bold;
+	line-height: 32px;
+}
+
+.channel-video-block {
+	display: inline-block;
+    width: 24%;
+    padding: 10px;
+    box-sizing: border-box;
+	min-height: 190px;
+    vertical-align: top;
+}
+
+.channel-video-block img {
+	width: 100%;
+}
+
+.channel-video-block a {
+	margin: 10px 0;
+    display: inline-block;
+}
+
+#channel-button .video-button {
+	margin-top: 20px;
+	margin-bottom: 30px;	
+}
+
+.player-control {
+	display: inline-block;
+}
+
+input.player-control-input {
+    width: 90px;
+    line-height: 38px;
+    box-sizing: border-box;
+    height: auto;
+    padding: 0;
+	vertical-align: top;
+}
+
+.player-control .video-button:hover {
+	background: #4178be;
+    color: #fff;
+    border-color: #4178be;
+}
+
+/*
+ * extend width for tab 2 Load buttons and tab 4 file browser button 
+ */
+
+div > select {
+	font-size: 16px;
+	width: 300px;
+}
+
+.upload-files {
+	float: left;
+	vertical-align: top;
+}
+
+p.heading {
+	padding-left: 30px;
+}
+
+.radio-label {
+   display: inline-block;
+   vertical-align: top;
+}
+.radio-input {
+   display: inline-block;
+   vertical-align: top;
+}
+
+input.channel-description {
+    width: 30em;
+	margin-bottom: 30px;
+}
